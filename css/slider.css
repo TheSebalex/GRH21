@@ -1,5 +1,10 @@
 .section-companies{
     padding: 2rem 3rem;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
 }
 
 .section-companies > div{
@@ -23,6 +28,7 @@
 .slider-companies{
     width: 70vw;
     display: flex;
+    justify-content: center;
     margin: 3%;
     overflow-x: hidden;
 }
@@ -31,6 +37,8 @@
     width: 23vw;
     min-height: 18vw;
     min-width: 27.33%;
+    max-width: 280px;
+    max-height: 280px;
     padding: 3%;
     margin: 0;
 }
@@ -39,5 +47,11 @@
     width: 100%;
     height: 100%;
     border-radius: 3vw;
+}
+
+@media screen and (min-width:1400px){
+    .slider-companies > div{
+        min-height: 280px;
+    }
 }
 

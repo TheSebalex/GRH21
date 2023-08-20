@@ -29,7 +29,7 @@ p, a{
     text-decoration: none;
 }
 
-h1, h3, h4{
+h1, h3{
     font-family: BebasNeue, sans-serif;
     font-weight: 100;
     text-decoration: none;
@@ -54,7 +54,7 @@ p{
     color: white;
     height: 90vh;
     padding: 0 3rem;
-    min-height: 600px;
+    min-height: 800px;
 }
 
 .main-page > h1{
@@ -122,12 +122,12 @@ p{
     background-color: #4d2046;
     color: white;
     font-family: BebasNeue;
-    text-align: center;
 }
 .divider h4{
     font-weight: 100;
     font-family: Gothic;
     letter-spacing: .2vw;
+    text-align: center;
 }
 
 .section-mision-vision{
@@ -264,7 +264,6 @@ footer a:hover{
     margin-top: 3rem;
     }
     .main-page > div h3{
-        text-align: center;
         font-size: 3.2rem;
     }
     .main-page > div img{
@@ -273,5 +272,13 @@ footer a:hover{
     :root{
         font-size: 10px;
     }
+    
 }
+
+@media screen and (min-width: 1440px){
+    .main-page > h1{
+        font-size: 85px;
+    }
+}
+
 
