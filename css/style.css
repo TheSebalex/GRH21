@@ -62,7 +62,7 @@ p{
     display: flex;
     flex-direction: column;
     margin: auto;
-    font-size: 2.5rem;
+    font-size: 4.5vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -122,10 +122,12 @@ p{
 }
 
 .exit-deploy-button{
-    width: 2rem;
-    height: 2rem;
+    width: 5vw;
+    height: 5vw;
     margin: 2rem;
-    margin-left: 4rem;
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 4vw;
     background-color: white;
     border-radius: 50%;
     padding: .5rem;
