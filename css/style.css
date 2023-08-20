@@ -255,7 +255,7 @@ p{
 }
 
 .section-services{
-    background-color: lightgray;
+    background-color: rgb(231, 231, 231);
     padding: 5rem 3rem;
     padding-bottom: 6rem;
 }
@@ -271,14 +271,14 @@ p{
 }
 
 .img-src{
-    height: 90vh;
+    height: 60vw;
     background-image: url(./src/rrhhSrc.jpg);
     background-position: left;
     background-size: cover;
 }
 
 footer{
-    background-color: gray;
+    background-color: #4d2046;
     color: white;
 }
 
@@ -316,7 +316,7 @@ footer a:hover{
 
 .social-media{
     padding: .2rem;
-    background-color: darkgray;
+    background-color: #3f062c;
 }
 
 .social-media ul{
