@@ -1,0 +1,292 @@
+:root{
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(./src/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Gothic;
+    src: url(./src/Gothic-light.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+p, a{
+    font-family: Gothic;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h1, h3{
+    font-family: BebasNeue, sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    text-align: justify;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+.main-page{
+    background-color: #630f40;
+    color: white;
+    height: 90vh;
+    padding: 0 3rem;
+    min-height: 600px;
+}
+
+.main-page > h1{
+    text-align: center;
+    font-size: 5vw;
+    font-family: Gothic;
+    position: relative;
+    top: 2rem;
+}
+
+.main-page > div{
+    display: grid;
+    max-width: 1440px;
+    grid-template-columns: 45% 35%;
+    gap: 10%;
+    justify-self: center;
+    margin: auto;
+    align-items: center;
+    height: 80%;
+}
+
+.main-page > div h3{
+    font-size: 5vw;
+    justify-self: center;
+    text-align: left;
+    animation: logoTextMovement 3s ease 1s;
+    
+}
+
+.main-page > div img{
+    width: 70%;
+    min-width: 100px;
+    justify-self: center;
+    max-width: 350px;
+    animation: logoMovement alternate 1s infinite linear;
+}
+
+@keyframes logoTextMovement{
+    from{
+       text-shadow:transparent;
+    }
+    30%{
+        text-shadow:0 0 1rem #ffffffb2 
+    }
+    to{
+        
+       text-shadow: transparent;
+    }
+}
+
+@keyframes logoMovement {
+    from{
+        transform: translateY(-1rem);
+    };
+    to{
+        transform: translateY(0rem);
+    }
+}
+
+.divider{
+    height: 10vh;
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d2046;
+    color: white;
+    font-family: BebasNeue;
+}
+.divider h4{
+    font-weight: 100;
+    font-family: Gothic;
+    letter-spacing: .2vw;
+    text-align: center;
+}
+
+.section-mision-vision{
+    background-color: #630f40;
+    padding: 5rem 3rem;
+    color: white;
+}
+
+.section-mision-vision h1{
+    text-align: left;
+    margin: 1rem;
+}
+
+.section-mision-vision p{
+    margin-bottom: 3.5rem;
+}
+
+.section-about{
+    padding: 5rem 3rem;
+    padding-bottom: 6rem;
+}
+
+.section-about h1{
+    margin: 1rem;
+}
+
+.section-about p{
+    margin-bottom: 3.5rem;
+    
+}
+
+.subsection-allies-photos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subsection-allies-photos div{
+    width: 35vw;
+    min-width: 250px;
+    max-width: 500px;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.subsection-allies-photos div img{
+    width: 50%;
+    border-radius: 50%;
+    border: .2vw black solid;
+}
+
+.subsection-allies h5{
+    font-family: BebasNeue;
+    font-weight: 100;
+    font-size: 1.8rem;
+}
+
+.subsection-allies h6{
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+.img-src{
+    height: 90vh;
+    background-image: url(./src/rrhhSrc.jpg);
+    background-position: left;
+    background-size: cover;
+}
+
+footer{
+    background-color: gray;
+    color: white;
+}
+
+footer li{
+    font-size: 1.3rem;
+}
+
+footer a{
+    color: white;
+    transition: color .2s;
+}
+
+footer *{
+    text-align: center;
+}
+
+footer h1{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+footer p{
+    font-size: 1.3rem;
+}
+
+footer a:hover{
+    color: gold;
+}
+
+.footer-information{
+    display: grid;
+    grid-template-columns: 50% 45%;
+    margin: 2rem auto;
+}
+
+.social-media{
+    padding: .2rem;
+    background-color: darkgray;
+}
+
+.social-media ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-media ul li, .social-media ul li *{
+    width: 5vw;
+    min-width: 50px;
+    max-width: 70px;
+}
+
+#copyright{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 900px){
+    .main-page{
+    min-height: 400px;
+    }
+    .main-page > div{
+        grid-template-columns: 100%;
+        margin-top: 6rem;
+    }
+    .main-page > div h3{
+        font-size: 3.2rem;
+    }
+    .main-page > div img{
+        width: 40%;
+    }
+    :root{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 1440px){
+    .main-page > h1{
+        font-size: 85px;
+    }
+    .main-page > div h3{
+        font-size: 70px;
+    }
+}
+
+
