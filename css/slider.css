@@ -28,7 +28,6 @@
 .slider-companies{
     width: 70vw;
     display: flex;
-    justify-content: center;
     margin: 3%;
     overflow-x: hidden;
 }
