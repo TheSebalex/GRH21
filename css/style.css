@@ -49,6 +49,97 @@ p{
     font-size: 1.8rem;
 }
 
+.deploy-section{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.938);   
+    z-index: 1000;
+    box-shadow: 0px 0px 20px;
+    transition: clip-path 1s;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-size: 2.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.deploy-section ul{
+    margin-top: 2rem;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    transition: all .5s;
+}
+
+.deploy-section li a{
+    color: white;
+    border-radius: 2rem;
+    padding: .5rem;
+    transition: padding,color,background-color .5s;
+}
+
+.deploy-section ul li a:hover{
+    color:#630f40;
+    background-color: white;
+    transition: color,background-color .5s;
+}
+
+.deploy-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    z-index: 1000;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: white;
+    border: solid .2rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.267);
+    transition: color,background-color .5s;
+}
+
+.deploy-button:hover{
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
+.exit-deploy-button:hover{
+    color: white;
+    background-color: darkred;
+}
+
+.deploy-button *{
+    width: 60%;
+}
+
+.exit-deploy-button{
+    width: 2rem;
+    height: 2rem;
+    margin: 2rem;
+    margin-left: 4rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: .5rem;
+    display: flex;
+    cursor: pointer;
+    color: darkred;
+    transition: color,background-color .5s;
+}
+
+.hide{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    transition: clip-path .5s;
+}
+
 .main-page{
     background-color: #630f40;
     color: white;
@@ -149,7 +240,7 @@ p{
 
 .section-about{
     padding: 5rem 3rem;
-    padding-bottom: 6rem;
+    padding-bottom: 3.5rem;
 }
 
 .section-about h1{
@@ -161,37 +252,20 @@ p{
     
 }
 
-.subsection-allies-photos{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.section-services{
+    background-color: lightgray;
+    padding: 5rem 3rem;
+    padding-bottom: 6rem;
 }
 
-.subsection-allies-photos div{
-    width: 35vw;
-    min-width: 250px;
-    max-width: 500px;
-    text-align: center;
-    padding-top: 4rem;
-}
-
-.subsection-allies-photos div img{
-    width: 50%;
-    border-radius: 50%;
-    border: .2vw black solid;
-}
-
-.subsection-allies h5{
+.section-services h2{
     font-family: BebasNeue;
-    font-weight: 100;
-    font-size: 1.8rem;
+    font-weight: 400;
+    font-size: 2rem; 
 }
 
-.subsection-allies h6{
-    font-family: sans-serif;
-    font-style: italic;
-    font-weight: 100;
-    font-size: 1.3rem;
+.section-services p{
+    padding-bottom: 3.5rem;
 }
 
 .img-src{
@@ -250,9 +324,9 @@ footer a:hover{
 }
 
 .social-media ul li, .social-media ul li *{
-    width: 5vw;
-    min-width: 50px;
-    max-width: 70px;
+    width: 3.8vw;
+    min-width: 30px;
+    max-width: 60px;
 }
 
 #copyright{
@@ -261,9 +335,12 @@ footer a:hover{
 }
 
 @media screen and (max-width: 900px){
+    .main-page{
+    min-height: 400px;
+    }
     .main-page > div{
-    grid-template-columns: 100%;
-    margin-top: 6rem;
+        grid-template-columns: 100%;
+        margin-top: 6rem;
     }
     .main-page > div h3{
         font-size: 3.2rem;

@@ -14,8 +14,24 @@
 </head>
 
 <body>
-    <div class="deploy">
-
+    <div class="deploy-button button-to-deploy">
+        <svg class="button-to-deploy" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path class="button-to-deploy" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+    </div>
+    <div class="deploy-section" id="deploy-section">
+        <div class="exit-deploy-button button-to-deploy">
+            <svg class="button-to-deploy" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path class="button-to-deploy" d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+              </svg>
+        </div>
+        <ul>
+            <li><a href="#main">Inicio</a></li>
+            <li><a href="#companies">Empresas Afiliadas</a></li>
+            <li><a href="#mision-vision">Mision / Vision</a></li>
+            <li><a href="#about">Acerca de Nosotros</a></li>
+            <li><a href="#services">Nuestros Servicios</a></li>
+        </ul>
     </div>
     <main>
         <div id="main" class="main-page">
@@ -42,76 +58,83 @@
             <div>
                 <img class="slider-arrow" data-value="1" src="./css/src/arrow.svg">
                 <div class="slider-companies" id="slider-companies" data-value="0">
-                    
+
                 </div>
                 <img class="slider-arrow slider-arrow2" data-value="2" src="./css/src/arrow.svg"">
             </div>
         </div>
         <div id="mision-vision" class="section-mision-vision">
-            <div class="subsection-mision">
-                <h1>
-                    Misión
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquam omnis corrupti ullam
-                    temporibus amet rem, iusto fugit ut? Possimus est magni suscipit nesciunt aliquam saepe officia quo!
-                    Placeat, quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci sunt veniam
-                    aliquam, doloremque asperiores porro ratione illum aliquid quo ex nihil officia nobis excepturi
-                    necessitatibus rem aspernatur tenetur ab?
-                </p>
-            </div>
-            <div class="subsection-vision">
-                <h1>
-                    Visión
-                </h1>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, totam, obcaecati quisquam autem nemo
-                    voluptatem asperiores praesentium illum incidunt, aut omnis magni optio fuga amet nulla quas
-                    mollitia vitae tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsum
-                    quis commodi libero sunt aliquam facere accusantium cumque. Non eaque earum dicta cumque impedit,
-                    beatae aliquid in doloremque pariatur autem!
-                </p>
-            </div>
-        </div>
-        <div class="img-src"></div>
-        <div id="about" class="section-about">
-            <h1>Acerca de nosotros</h1>
-            <p>
-                Somos una empresa dedicada y especializada a la oferta de servicios en recursos humanos, realizando asi
-                procesos de selección efectivos y de calidad, contando con profesionales con experiencia y eficiencia en
-                las areas de rrhh y relaciones industriales, garantizando asi a nuestros clientes contar con
-                profesionales de calidad en sus puestos de trabajo y areas laborales, tomando en cuenta todas las
-                metodologias necesarias para que tu empresa o institución cuente con el mejor ambiente y los mejores
-                profesionales.
-            </p>
-            <div class="subsection-allies">
-                <h1>
-                    Profesionales Aliados
-                </h1>
-                <div class="subsection-allies-photos">
-
-                    <div>
-                        <img class="profesional-photos" src="./css/src/nophoto.svg" alt="mariangela reyes foto">
-                        <h5>Mariangela Reyes</h5>
-                        <h6>Lcda. en Psicologia</h6>
-                    </div>
-
-                    <div>
-                        <img class="profesional-photos" src="./css/src/nophoto.svg" alt="glenda rios foto">
-                        <h5>Glenda Rios</h5>
-                        <h6>Lcda. en Relaciones <br> Industriales</h6>
-                    </div>
-
-                    <br>
-
-                    <div>
-                        <img class="profesional-photos" src="./css/src/nophoto.svg" alt="glenda rios foto">
-                        <h5>Glimar Rondón</h5>
-                        <h6>Lcda. en Relaciones <br> Industriales</h6>
-                    </div>
+                <div class="subsection-mision">
+                    <h1>
+                        Misión
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquam omnis corrupti ullam
+                        temporibus amet rem, iusto fugit ut? Possimus est magni suscipit nesciunt aliquam saepe officia
+                        quo!
+                        Placeat, quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima adipisci sunt
+                        veniam
+                        aliquam, doloremque asperiores porro ratione illum aliquid quo ex nihil officia nobis excepturi
+                        necessitatibus rem aspernatur tenetur ab?
+                    </p>
+                </div>
+                <div class="subsection-vision">
+                    <h1>
+                        Visión
+                    </h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, totam, obcaecati quisquam autem
+                        nemo
+                        voluptatem asperiores praesentium illum incidunt, aut omnis magni optio fuga amet nulla quas
+                        mollitia vitae tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsum
+                        quis commodi libero sunt aliquam facere accusantium cumque. Non eaque earum dicta cumque
+                        impedit,
+                        beatae aliquid in doloremque pariatur autem!
+                    </p>
                 </div>
             </div>
-        </div>
+            <div class="img-src"></div>
+            <div id="about" class="section-about">
+                <h1>Acerca de nosotros</h1>
+                <p>
+                    Somos una empresa dedicada y especializada a la oferta de servicios en recursos humanos, realizando
+                    asi
+                    procesos de selección efectivos y de calidad, contando con profesionales con experiencia y
+                    eficiencia en
+                    las areas de rrhh y relaciones industriales, garantizando asi a nuestros clientes contar con
+                    profesionales de calidad en sus puestos de trabajo y areas laborales, tomando en cuenta todas las
+                    metodologias necesarias para que tu empresa o institución cuente con el mejor ambiente y los mejores
+                    profesionales.
+                </p>
+            </div>
+            <div id="services" class="section-services">
+                <h1>Nuestros Servicios</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maiores, quae esse aliquam nesciunt
+                    fuga expedita, quas modi vitae veniam illo impedit obcaecati suscipit. Corporis porro odio fuga unde
+                    voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, adipisci ullam
+                    pariatur delectus, rem eaque aperiam veritatis aliquid incidunt quas autem, laborum neque cupiditate
+                    iure amet vitae harum facere dolor?</p>
+                <h2>Selección de Personal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consectetur fuga non incidunt
+                    voluptate. In labore voluptas officiis numquam blanditiis pariatur ipsam praesentium, temporibus
+                    illum unde, quod, necessitatibus voluptatum ullam!</p>
+                <h2>Marketing y Diseño</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nulla, aliquam eum iste at ipsam
+                    obcaecati saepe adipisci reprehenderit ea autem, quidem voluptas enim quos et iure doloribus
+                    officiis! Accusamus!</p>
+                <h2>Nomina</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eius laudantium saepe voluptatem
+                    omnis tenetur laboriosam, repellat deserunt veniam molestias nobis voluptatum, asperiores sunt
+                    numquam ad ex eum ducimus similique.</p>
+                <h2>Derecho Laboral</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatibus eaque odit recusandae amet
+                    dignissimos aperiam necessitatibus nihil suscipit quos, aut dolore nostrum! Aut eum velit non
+                    debitis nobis voluptates?</p>
+                <h2>Capacitación</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum optio voluptates iure atque
+                    consequuntur cupiditate nesciunt recusandae harum facilis commodi earum ratione, laboriosam impedit
+                    incidunt dignissimos deleniti odio qui.</p>
+            </div>
     </main>
     <footer>
         <div class="social-media">
@@ -120,35 +143,34 @@
                 <li><a href=""><img src="./css/src/facebookIcon.png"></a></li>
             </ul>
         </div>
-            <div>
-                <h1>
-                    Contáctanos a través de nuestras redes sociales
-                </h1>
-            </div>
+        <div>
+            <h1>
+                Contáctanos a través de nuestras redes sociales
+            </h1>
+        </div>
 
-            <div class="footer-information">
-                <div>
-                    <p>inv.grh21@gmail.com</p>
-                    <p>Maracay, Edo. Aragua</p>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="#main">Inicio</a></li>
-                        <li><a href="#companies">Empresas Afiliadas</a></li>
-                        <li><a href="#mision-vision">Mision / Vision</a></li>
-                        <li><a href="#about">Acerca de Nosotros</a></li>
-                    </ul>
-                </div>
-            </div>
-
+        <div class="footer-information">
             <div>
-                <p id="copyright">
-                    Todos los derechos reservados. GRH21 - 2023
-                </p>
+                <p>inv.grh21@gmail.com</p>
+                <p>Maracay, Edo. Aragua</p>
             </div>
+            <div>
+                <ul>
+                    <li><a href="#main">Inicio</a></li>
+                    <li><a href="#companies">Empresas Afiliadas</a></li>
+                    <li><a href="#mision-vision">Mision / Vision</a></li>
+                    <li><a href="#about">Acerca de Nosotros</a></li>
+                    <li><a href="#services">Nuestros Servicios</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <p id="copyright">
+                Todos los derechos reservados. GRH21 - 2023
+            </p>
+        </div>
     </footer>
 </body>
 
 </html>
-
-

@@ -1,4 +1,5 @@
 const SLIDER_MAIN_ELEMENT = document.getElementById("slider-companies");
+const SECTION_DEPLOYED = document.getElementById("deploy-section");
 
 const SLIDER_COMPANIES_IMG = [
   `./css/src/sliderImgs/Recurso4.svg`,
@@ -20,4 +21,20 @@ function insertCompaniesImg() {
   }
 }
 
-insertCompaniesImg();
+document.addEventListener("DOMContentLoaded", () => {
+  insertCompaniesImg();
+});
+
+document.addEventListener("click", (e) => {
+  const CLASSLIST_CONTAINS = (a) => {
+    return e.target.classList.contains(a);
+  };
+
+  if (CLASSLIST_CONTAINS("button-to-deploy")) {
+    SECTION_DEPLOYED.classList.toggle("hide");
+  }
+});
+
+document.addEventListener("scroll", ()=>{
+  SECTION_DEPLOYED.classList.add("hide");
+})
