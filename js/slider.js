@@ -44,7 +44,7 @@ function moveSlider(slider, direction) {
     case "1":
       if (currentScroll > 0 && currentScroll != 0) {
         SET_ATTR(currentScroll - 1);
-      } else if (currentScroll === "0") {
+      } else if (currentScroll === 0) {
         SET_ATTR(childElement);
       }
       break;

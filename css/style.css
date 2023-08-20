@@ -74,6 +74,8 @@ p{
     font-size: 5vw;
     justify-self: center;
     text-align: left;
+    animation: logoTextMovement 3s ease 1s;
+    
 }
 
 .main-page > div img{
@@ -81,7 +83,29 @@ p{
     min-width: 150px;
     justify-self: center;
     max-width: 400px;
-    animation: logoMovement alternate 3s linear infinite;
+    animation: logoMovement alternate 1s infinite linear;
+}
+
+@keyframes logoTextMovement{
+    from{
+       text-shadow:transparent;
+    }
+    30%{
+        text-shadow:0 0 3rem #ffffff 
+    }
+    to{
+        
+       text-shadow: transparent;
+    }
+}
+
+@keyframes logoMovement {
+    from{
+        transform: translateY(-1rem);
+    };
+    to{
+        transform: translateY(0rem);
+    }
 }
 
 .divider{
