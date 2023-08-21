@@ -391,7 +391,8 @@ footer a:hover{
     .main-page .shape-main{
         background: radial-gradient(circle, transparent 0%,transparent 10%, rgb(255, 255, 255) 100%);
         left: 40%;
-        top: 12.5%
+        top: 18%;
+        animation: none
     }
     .main-page > div{
         grid-template-columns: 100%;
@@ -399,9 +400,11 @@ footer a:hover{
     }
     .main-page > div h3{
         font-size: 3.2rem;
+        animation-iteration-count: unset;
     }
     .main-page > div img{
-        width: 40%;
+        width: 40vmin;
+        min-width: 20%;
     }
     :root{
         font-size: 10px;
@@ -427,12 +430,7 @@ footer a:hover{
     
 }
 
-@media screen and (max-height: 550px){
-    .main-page > div img{
-        width: 40vh;
-        min-width: 150px;
-    }
-}
+
 
 @media screen and (min-width: 1440px){
     .main-page > h1{

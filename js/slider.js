@@ -1,7 +1,7 @@
 const PRINCIPAL_SLIDER = document.getElementById("slider-companies");
 let idInterval = setInterval(() => {
   moveSlider(PRINCIPAL_SLIDER, "2");
-}, 2000);
+}, 1500);
 let timeoutID;
 
 document.addEventListener("click", (e) => {
@@ -14,8 +14,8 @@ document.addEventListener("click", (e) => {
     timeoutID = setTimeout(() => {
       idInterval = setInterval(() => {
         moveSlider(PRINCIPAL_SLIDER, "2");
-      }, 2000);
-    }, 1000);
+      }, 1500);
+    }, 500);
 
     switch (target.getAttribute("data-value")) {
 
