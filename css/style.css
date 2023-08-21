@@ -16,7 +16,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 body{
@@ -64,6 +64,7 @@ p{
     margin: auto;
     font-size: 4.5vw;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    overflow: auto;
 }
 
 .deploy-section ul{
@@ -73,6 +74,7 @@ p{
     flex-direction: column;
     gap: 2.5rem;
     transition: all .5s;
+    padding-bottom: 3rem;
 }
 
 .deploy-section li a{
@@ -379,18 +381,18 @@ footer a:hover{
 #copyright{
     font-size: 1.2rem;
     font-family: sans-serif;
+    padding-top: 4rem;
 }
 
 @media screen and (max-width: 900px){
     .main-page{
     min-height: 400px;
     }
-
     .main-page .shape-main{
+        background: radial-gradient(circle, transparent 0%,transparent 10%, rgb(255, 255, 255) 100%);
         left: 40%;
         top: 12.5%
     }
-
     .main-page > div{
         grid-template-columns: 100%;
         margin-top: 6rem;
@@ -423,6 +425,13 @@ footer a:hover{
         opacity: .4;
     }
     
+}
+
+@media screen and (max-height: 550px){
+    .main-page > div img{
+        width: 40vh;
+        min-width: 150px;
+    }
 }
 
 @media screen and (min-width: 1440px){
