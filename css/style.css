@@ -157,9 +157,10 @@ p{
 .main-page .shape-main{
     position: absolute;
     top: 35%;
-    left: 14.5%;
-    width: 20%;
-    max-height: 20%;
+    left: calc(25% - 20vmin);
+    right: calc(75% - 20vmin);
+    width: 20vmin;
+    max-height: 20vmin;
     max-width: 1440px;
     background: radial-gradient(circle, transparent 0%,transparent 40%, rgb(255, 255, 255) 100%);
     border-radius: 50%;
@@ -389,10 +390,13 @@ footer a:hover{
     min-height: 400px;
     }
     .main-page .shape-main{
-        background: radial-gradient(circle, transparent 0%,transparent 10%, rgb(255, 255, 255) 100%);
-        left: 40%;
-        top: 18%;
-        animation: none
+        top: 15%;
+        left: calc(50% - 12.5vmin);
+        right: calc(50% - 12.5vmin);
+        width: 25vmin;
+        height: 25vmin;
+        background: radial-gradient(circle, transparent 0%,transparent 10%, rgba(255, 255, 255, 0.877) 100%);
+        filter: blur(30px);
     }
     .main-page > div{
         grid-template-columns: 100%;
