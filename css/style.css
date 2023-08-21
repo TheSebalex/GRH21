@@ -143,11 +143,35 @@ p{
 }
 
 .main-page{
-    background-color: #630f40;
+    position: relative;
+    background: linear-gradient(160deg,#630f40,rgb(32, 0, 27));
     color: white;
     height: 90vh;
     padding: 0 3rem;
     min-height: 600px;
+    overflow: hidden;
+}
+
+.main-page .shape-main{
+    position: absolute;
+    top: 35%;
+    left: 14.5%;
+    width: 20%;
+    max-height: 20%;
+    max-width: 1440px;
+    background: radial-gradient(circle, transparent 0%,transparent 40%, rgb(255, 255, 255) 100%);
+    border-radius: 50%;
+    filter: blur(50px);
+    animation: shape 1s infinite alternate;
+}
+
+@keyframes shape{
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.5);
+        }
 }
 
 .main-page > h1{
@@ -172,8 +196,8 @@ p{
 .main-page > div h3{
     font-size: 5vw;
     justify-self: center;
-    text-align: left;
-    animation: logoTextMovement 3s ease 1s;
+    text-align: center;
+    animation: logoTextMovement 4s ease 1s infinite;
     
 }
 
@@ -190,7 +214,7 @@ p{
        text-shadow:transparent;
     }
     30%{
-        text-shadow:0 0 1rem #ffffffb2 
+        text-shadow:0 0 .8rem #ffffffb2 
     }
     to{
         
@@ -226,7 +250,7 @@ p{
 }
 
 .section-mision-vision{
-    background-color: #630f40;
+    background: linear-gradient(160deg,#630f40,rgb(36, 0, 31));
     padding: 5rem 3rem;
     color: white;
 }
@@ -241,6 +265,7 @@ p{
 }
 
 .section-about{
+    background-color: rgb(240, 240, 240);
     padding: 5rem 3rem;
     padding-bottom: 3.5rem;
 }
@@ -255,7 +280,8 @@ p{
 }
 
 .section-services{
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(18, 18, 25);
+    color: white;
     padding: 5rem 3rem;
     padding-bottom: 6rem;
 }
@@ -272,13 +298,32 @@ p{
 
 .img-src{
     height: 60vw;
-    background-image: url(./src/rrhhSrc.jpg);
+    max-height: 90vh;
     background-position: left;
     background-size: cover;
 }
 
+.shape-2{
+    position: absolute;
+    width: 20vw;
+    bottom: -15%;
+    left: 10%;
+    opacity: .6;
+    filter: blur(1px);
+}
+
+.shape-3{
+    position: absolute;
+    width: 20vw;
+    top: 10%;
+    right: 5%;
+    transform: rotate(65deg);
+    filter: blur(2px);
+    opacity: .4;
+}
+
 footer{
-    background-color: #4d2046;
+    background-color: #361331;
     color: white;
 }
 
@@ -316,7 +361,7 @@ footer a:hover{
 
 .social-media{
     padding: .2rem;
-    background-color: #3f062c;
+    background-color: #2b071f;
 }
 
 .social-media ul{
@@ -340,6 +385,12 @@ footer a:hover{
     .main-page{
     min-height: 400px;
     }
+
+    .main-page .shape-main{
+        left: 40%;
+        top: 12.5%
+    }
+
     .main-page > div{
         grid-template-columns: 100%;
         margin-top: 6rem;
@@ -352,6 +403,24 @@ footer a:hover{
     }
     :root{
         font-size: 10px;
+    }
+    .shape-2{
+        position: absolute;
+        width: 30vw;
+        bottom: -2%;
+        left: 5%;
+        opacity: .6;
+        filter: blur(2px);
+    }
+    
+    .shape-3{
+        position: absolute;
+        width: 40vw;
+        top: 10%;
+        right: 1%;
+        transform: rotate(65deg);
+        filter: blur(3px);
+        opacity: .4;
     }
     
 }

@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
+    background-color: rgb(240, 240, 240);
 }
 
 .section-companies > div{
