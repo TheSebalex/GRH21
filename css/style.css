@@ -23,7 +23,7 @@ body{
     background-color: #f2f2f2;
 }
 
-p, a{
+p, a, li{
     font-family: Gothic;
     font-weight: 600;
     text-decoration: none;
@@ -45,7 +45,7 @@ h1{
     text-align: center;
 }
 
-p{
+p, li{
     font-size: 1.8rem;
 }
 
@@ -289,24 +289,42 @@ p{
 
 .section-about p{
     margin-bottom: 3.5rem;
-    
+}
+
+.subsection-cita{
+    width: 40%;
+    display: flex;
+    margin: auto;
+    margin-right: 8%;
+    font-size: 1.8rem;
+    font-style: italic;
 }
 
 .section-services{
     background-color: rgb(18, 18, 25);
     color: white;
     padding: 5rem 3rem;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 
 .section-services h2{
     font-family: BebasNeue;
     font-weight: 400;
-    font-size: 2rem; 
+    font-size: 2.2rem; 
 }
 
 .section-services p{
     padding-bottom: 3.5rem;
+}
+
+.section-services ul{
+    margin-left: 1.8rem;
+    padding-bottom: 3.5rem;
+}
+
+.section-services ul li{
+    list-style:disc;
+    margin-bottom: .35rem;
 }
 
 .img-src{
@@ -360,6 +378,8 @@ footer h1{
 
 footer p{
     font-size: 1.3rem;
+    margin: auto;
+    width: 60%;
 }
 
 footer a:hover{
