@@ -15,7 +15,7 @@ const SLIDER_COMPANIES_IMG = [
 function insertCompaniesImg() {
   for (let i = 0; i < SLIDER_COMPANIES_IMG.length - 1; i++) {
     let divToInsert = `
-    <div><div style="background-image: url(${SLIDER_COMPANIES_IMG[i]}); background-size: cover; background-position: center"></div></div>
+    <img src="${SLIDER_COMPANIES_IMG[i]}" class="imgSlider">
     `;
     SLIDER_MAIN_ELEMENT.insertAdjacentHTML("beforeend", divToInsert);
   }
@@ -38,3 +38,5 @@ document.addEventListener("click", (e) => {
 document.addEventListener("scroll", ()=>{
   SECTION_DEPLOYED.classList.add("hide");
 })
+
+'<div><div style="background-image: url(${SLIDER_COMPANIES_IMG[i]}); background-size: cover; background-position: center"></div></div>'
